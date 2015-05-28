@@ -31,8 +31,11 @@ public class PlayerController: MonoBehaviour
 		if (grounded)
 			doubleJump = false;
 
-		if (!grounded)
-			return;
+		//Uncomment this to make it to where the player cannot turn while in the air.
+		//if (!grounded)
+			//return;
+
+
 		//move left and right
 		float move = Input.GetAxis ("Horizontal");
 		GetComponent<Rigidbody2D>().velocity = new Vector2(move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
