@@ -11,6 +11,11 @@ public class PlayerController: MonoBehaviour
 	public LayerMask whatIsGround;
 	public float jumpForce = 50;
 	bool doubleJump = true; //double jump already used = true
+    private Animator animator;
+
+    void Start() {
+        animator = GetComponent<Animator>();
+    }   
 
 	void Update()
 	{
@@ -22,6 +27,13 @@ public class PlayerController: MonoBehaviour
 				doubleJump = true;
 			}
 		}
+
+        if(Input.GetKey("left")) {
+            animator.SetBool("moveLeft", true);
+        }
+        if (Input.GetKey("right")) {
+            animator.SetBool("moveLeft", false);
+        }
 
 	}
     void FixedUpdate() 
