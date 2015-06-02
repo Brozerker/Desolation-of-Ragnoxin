@@ -3,13 +3,13 @@ using System.Collections;
 
 public class PlayerController: MonoBehaviour 
 {
-	public float maxSpeed = 10f;
+	public float maxSpeed = 8f;
     public int speed;
 	bool grounded = false; //on ground?
 	public Transform groundCheck;
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
-	public float jumpForce = 50;
+	public float jumpForce = 300;
 	bool doubleJump = true; //double jump already used = true
     private Animator animator;
 
