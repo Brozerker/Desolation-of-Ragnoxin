@@ -9,7 +9,7 @@ public class enemyController : MonoBehaviour {
     private Animator animator;
     private float waitTime;
     private bool facingLeft;
-    public GameObject player;
+    private GameObject player;
     public enum UseCase { wander, seek, flee }
     public UseCase useCase;
     public BoxCollider2D attackArea;
@@ -20,7 +20,7 @@ public class enemyController : MonoBehaviour {
         animator = GetComponent<Animator>();
         startPos = transform.position;
 
-        attackArea = GameObject.Instantiate(new BoxCollider2D());
+        //attackArea = GameObject.Instantiate(new BoxCollider2D());
         float newX = GetComponent<BoxCollider2D>().size.x / 2;
         Vector2 newSize = new Vector2(GetComponent<BoxCollider2D>().size.x / 2, 0.0f);
 
@@ -32,15 +32,25 @@ public class enemyController : MonoBehaviour {
         attackArea.offset = newOffset;
     }
 
+    void OnTriggerEnter2D(Collision2D other) {
+        if (other.gameObject.tag == "Obstacle") {
+            animator.SetBool("moveLeft", !(animator.GetBool("moveLeft")));
+            speed *= -1;
+        }
+    }
+
     // Update is called once per frame
     void Update() {
-        if (player.transform.position.x - transform.position.x < 1) useCase = UseCase.seek; 
+        if (player.transform.position.x - transform.position.x < 1) {
+            useCase = UseCase.seek;
+        }
         updateMovement();
     }
 
     void updateMovement() {
         switch (useCase) {
             case enemyController.UseCase.wander:
+                Debug.Log("wander");
                 if (transform.position.x < startPos.x || transform.position.x > (startPos.x + distance)) {
                     animator.SetBool("moveLeft", !(animator.GetBool("moveLeft")));
                     speed *= -1;
