@@ -13,6 +13,8 @@ public class PlayerController: MonoBehaviour
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
 	private Animator animator;
+	Vector3 playerPos;
+	Transform playerTransform;
 
 	bool facingRight = true;
 
@@ -23,12 +25,12 @@ public class PlayerController: MonoBehaviour
 
         animator = GetComponent<Animator>();
 		jumpForce = jumpForceFactor * 10000; //jump multiplier
-
+		playerTransform = GameObject.Find ("Player").transform;
     }   
 
 	void Update()
 	{
-
+		playerPos = playerTransform.position;
 	
 		//JUMP CONTROL
 		if((grounded || !doubleJump) && Input.GetKeyDown (KeyCode.Space))
@@ -39,6 +41,17 @@ public class PlayerController: MonoBehaviour
 			{
 				doubleJump = true;
 			}
+		}
+
+		// Reset Level Key
+		if(Input.GetKeyDown(KeyCode.R)) {
+			Application.LoadLevel(Application.loadedLevel);
+		}
+
+		// Fallen out of the world detection
+		if (playerPos.y < -10) {
+			// add code to reduce 'hp' by one
+			Application.LoadLevel(Application.loadedLevel);
 		}
 
 		//OLD ANIMATION CODE DELETE IF NO LONGER NEEDED
