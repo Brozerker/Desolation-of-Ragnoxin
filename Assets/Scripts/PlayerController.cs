@@ -77,7 +77,7 @@ public class PlayerController: MonoBehaviour
 
 		//move left and right
 		float move = Input.GetAxis ("Horizontal"); //get input direction (+/- value)
-		animator.SetFloat ("Speed", Mathf.Abs (move)); //apply movement direction to variable for animation (+/- value)
+		//animator.SetFloat ("Speed", Mathf.Abs (move)); //apply movement direction to variable for animation (+/- value)
 
 
 		//animation for left/right
