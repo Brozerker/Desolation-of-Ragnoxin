@@ -2,8 +2,10 @@
 using System.Collections;
 
 public class enemyController : MonoBehaviour {
+    public float health;
     public float distance;
     public float speed;
+    public float chaseSpeed;
     public float attackPower;
     public float attackDelay = 0.7f;
     //private float startTimer;
@@ -56,14 +58,27 @@ public class enemyController : MonoBehaviour {
                     animator.SetBool("moveLeft", !(animator.GetBool("moveLeft")));
                     speed *= -1;
                 }
+                transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, 0.0f);
                 break;
             case enemyController.UseCase.seek:
+                //default to moving right
+                facingLeft = true;
+                speed = Mathf.Abs(speed);
+                chaseSpeed = Mathf.Abs(chaseSpeed);
+
+                //if player is to the left, move left
+                int offset = 20;
+                if ((player.transform.position.x + offset) - (transform.position.x + offset) < 0) {
+                    facingLeft = false;
+                    speed *= -1;
+                    chaseSpeed *= -1;
+                }
+                transform.position = new Vector3(transform.position.x + speed + chaseSpeed * Time.deltaTime, transform.position.y, 0.0f);
                 Debug.Log("seek");
                 break;
             case enemyController.UseCase.flee:
                 break;
         }
-        transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, 0.0f);
     }
 }
 
