@@ -9,9 +9,7 @@ public class EnemyCollisionChecker : enemyController {
 
 	void Start () {
         attackArea = GetComponent<BoxCollider2D>();
-
-        float newX = parent.GetComponent<BoxCollider2D>().size.x / 2;
-        Vector2 newSize = new Vector2(parent.GetComponent<BoxCollider2D>().size.x / 2, 0.0f);
+        Vector2 newSize = new Vector2(parent.GetComponent<BoxCollider2D>().size.x * 3/4, parent.GetComponent<BoxCollider2D>().size.y);
 
         offset = 1;
         if (facingLeft) offset = -1;
@@ -29,13 +27,19 @@ public class EnemyCollisionChecker : enemyController {
         attackArea.offset = newOffset;
 	}
 
-    void OnTriggerEnter2D(Collision2D other) {
+    void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag == "Obstacle") {
-            // turn around
+            facingLeft = !facingLeft;
         }
 
         if (other.gameObject.tag == "Player") {
-            // ATTACK!
+            attacking = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other) {
+        if (other.gameObject.tag == "Player") {
+            attacking = false;
         }
     }
 }

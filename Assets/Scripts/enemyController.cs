@@ -5,10 +5,12 @@ public class enemyController : MonoBehaviour {
     public float distance;
     public float speed;
     public float attackPower;
+    public float waitTime;
+    //private float startTimer;
     private Vector3 startPos;
     private Animator animator;
-    private float waitTime;
     public static bool facingLeft;
+    public static bool attacking;
     private GameObject gameObject;
     private GameObject player;
     public enum UseCase { wander, seek, flee }
@@ -22,19 +24,20 @@ public class enemyController : MonoBehaviour {
         startPos = transform.position;
     }
 
-    //void OnTriggerEnter2D(Collision2D other) {
-    //    if (other.gameObject.tag == "Obstacle") {
-    //        animator.SetBool("moveLeft", !(animator.GetBool("moveLeft")));
-    //        speed *= -1;
-    //    }
-    //}
-
     // Update is called once per frame
     void Update() {
-        if (Mathf.Abs(transform.position.x - player.transform.position.x) < 1) {
-            useCase = UseCase.seek;
+        if (attacking) {
+            //startTimer = 0;
+            if ((Time.deltaTime % waitTime) < 1) {
+                Debug.Log("attack");
+            }
         }
-        updateMovement();
+        else {
+            if (Mathf.Abs(transform.position.x - player.transform.position.x) < 1) {
+                useCase = UseCase.seek;
+            }
+            updateMovement();
+        }
     }
 
     void updateMovement() {
