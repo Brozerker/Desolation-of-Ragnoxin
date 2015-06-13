@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 50249d72da882494a89a217e039721f4
-timeCreated: 1433301701
+timeCreated: 1434214864
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -230,1060 +230,1060 @@ TextureImporter:
     - name: Graphic_sprite_Player_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 1282
-        width: 30
-        height: 48
+        x: 0
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_1
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1282
-        width: 28
-        height: 48
+        x: 64
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_2
       rect:
         serializedVersion: 2
-        x: 146
-        y: 1282
-        width: 28
-        height: 48
+        x: 128
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_3
       rect:
         serializedVersion: 2
-        x: 206
-        y: 1282
-        width: 36
-        height: 48
+        x: 192
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_4
       rect:
         serializedVersion: 2
-        x: 263
-        y: 1282
-        width: 50
-        height: 48
+        x: 256
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_5
       rect:
         serializedVersion: 2
-        x: 328
-        y: 1282
-        width: 48
-        height: 48
+        x: 320
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_6
       rect:
         serializedVersion: 2
-        x: 398
-        y: 1282
-        width: 36
-        height: 48
+        x: 384
+        y: 1280
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_7
       rect:
         serializedVersion: 2
-        x: 21
-        y: 1218
-        width: 22
-        height: 49
+        x: 0
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_8
       rect:
         serializedVersion: 2
-        x: 85
-        y: 1218
-        width: 23
-        height: 49
+        x: 64
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_9
       rect:
         serializedVersion: 2
-        x: 149
-        y: 1218
-        width: 22
-        height: 49
+        x: 128
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_10
       rect:
         serializedVersion: 2
-        x: 212
-        y: 1218
-        width: 26
-        height: 49
+        x: 192
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_11
       rect:
         serializedVersion: 2
-        x: 274
-        y: 1218
-        width: 33
-        height: 49
+        x: 256
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_12
       rect:
         serializedVersion: 2
-        x: 338
-        y: 1218
-        width: 33
-        height: 49
+        x: 320
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_13
       rect:
         serializedVersion: 2
-        x: 404
-        y: 1218
-        width: 28
-        height: 49
+        x: 384
+        y: 1216
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_14
       rect:
         serializedVersion: 2
-        x: 17
-        y: 1154
-        width: 30
-        height: 50
+        x: 0
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_15
       rect:
         serializedVersion: 2
-        x: 81
-        y: 1154
-        width: 30
-        height: 50
+        x: 64
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_16
       rect:
         serializedVersion: 2
-        x: 146
-        y: 1154
-        width: 28
-        height: 50
+        x: 128
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_17
       rect:
         serializedVersion: 2
-        x: 206
-        y: 1154
-        width: 36
-        height: 50
+        x: 192
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_18
       rect:
         serializedVersion: 2
-        x: 263
-        y: 1154
-        width: 50
-        height: 50
+        x: 256
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_19
       rect:
         serializedVersion: 2
-        x: 328
-        y: 1154
-        width: 48
-        height: 50
+        x: 320
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_20
       rect:
         serializedVersion: 2
-        x: 399
-        y: 1154
-        width: 34
-        height: 50
+        x: 384
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_21
       rect:
         serializedVersion: 2
-        x: 21
-        y: 1090
-        width: 22
-        height: 49
+        x: 0
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_22
       rect:
         serializedVersion: 2
-        x: 84
-        y: 1090
-        width: 23
-        height: 49
+        x: 64
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_23
       rect:
         serializedVersion: 2
-        x: 149
-        y: 1090
-        width: 22
-        height: 49
+        x: 128
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_24
       rect:
         serializedVersion: 2
-        x: 210
-        y: 1090
-        width: 26
-        height: 49
+        x: 192
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_25
       rect:
         serializedVersion: 2
-        x: 269
-        y: 1090
-        width: 33
-        height: 49
+        x: 256
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_26
       rect:
         serializedVersion: 2
-        x: 333
-        y: 1090
-        width: 33
-        height: 49
+        x: 320
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_27
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1090
-        width: 28
-        height: 49
+        x: 384
+        y: 1088
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_28
       rect:
         serializedVersion: 2
-        x: 17
-        y: 1026
-        width: 30
-        height: 48
+        x: 0
+        y: 1024
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_29
       rect:
         serializedVersion: 2
-        x: 84
+        x: 64
         y: 1024
-        width: 26
-        height: 49
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_30
       rect:
         serializedVersion: 2
-        x: 150
+        x: 128
         y: 1024
-        width: 23
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_31
       rect:
         serializedVersion: 2
-        x: 214
+        x: 192
         y: 1024
-        width: 23
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_32
       rect:
         serializedVersion: 2
-        x: 279
+        x: 256
         y: 1024
-        width: 23
-        height: 49
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_33
       rect:
         serializedVersion: 2
-        x: 343
+        x: 320
         y: 1024
-        width: 23
-        height: 49
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_34
       rect:
         serializedVersion: 2
-        x: 407
+        x: 384
         y: 1024
-        width: 23
-        height: 49
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_35
       rect:
         serializedVersion: 2
-        x: 470
+        x: 448
         y: 1024
-        width: 23
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_36
       rect:
         serializedVersion: 2
-        x: 21
-        y: 962
-        width: 22
-        height: 49
+        x: 0
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_37
       rect:
         serializedVersion: 2
-        x: 83
-        y: 962
-        width: 25
-        height: 49
+        x: 64
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_38
       rect:
         serializedVersion: 2
-        x: 147
-        y: 962
-        width: 27
-        height: 49
+        x: 128
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_39
       rect:
         serializedVersion: 2
-        x: 213
-        y: 962
-        width: 26
-        height: 49
+        x: 192
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_40
       rect:
         serializedVersion: 2
-        x: 271
-        y: 962
-        width: 27
-        height: 49
+        x: 256
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_41
       rect:
         serializedVersion: 2
-        x: 332
-        y: 962
-        width: 30
-        height: 49
+        x: 320
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_42
       rect:
         serializedVersion: 2
-        x: 399
-        y: 962
-        width: 27
-        height: 49
+        x: 384
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_43
       rect:
         serializedVersion: 2
-        x: 469
-        y: 962
-        width: 26
-        height: 49
+        x: 448
+        y: 960
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_44
       rect:
         serializedVersion: 2
-        x: 17
-        y: 898
-        width: 30
-        height: 50
+        x: 0
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_45
       rect:
         serializedVersion: 2
-        x: 83
-        y: 899
-        width: 24
-        height: 49
+        x: 64
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_46
       rect:
         serializedVersion: 2
-        x: 147
-        y: 899
-        width: 24
-        height: 49
+        x: 128
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_47
       rect:
         serializedVersion: 2
-        x: 210
-        y: 899
-        width: 25
-        height: 49
+        x: 192
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_48
       rect:
         serializedVersion: 2
-        x: 275
-        y: 899
-        width: 24
-        height: 48
+        x: 256
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_49
       rect:
         serializedVersion: 2
-        x: 339
-        y: 899
-        width: 24
-        height: 48
+        x: 320
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_50
       rect:
         serializedVersion: 2
-        x: 403
-        y: 899
-        width: 24
-        height: 48
+        x: 384
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_51
       rect:
         serializedVersion: 2
-        x: 466
-        y: 899
-        width: 25
-        height: 49
+        x: 448
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_52
       rect:
         serializedVersion: 2
-        x: 21
-        y: 834
-        width: 22
-        height: 49
+        x: 0
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_53
       rect:
         serializedVersion: 2
-        x: 84
-        y: 834
-        width: 25
-        height: 49
+        x: 64
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_54
       rect:
         serializedVersion: 2
-        x: 146
-        y: 834
-        width: 27
-        height: 49
+        x: 128
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_55
       rect:
         serializedVersion: 2
-        x: 209
-        y: 834
-        width: 26
-        height: 49
+        x: 192
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_56
       rect:
         serializedVersion: 2
-        x: 278
-        y: 834
-        width: 27
-        height: 49
+        x: 256
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_57
       rect:
         serializedVersion: 2
-        x: 342
-        y: 834
-        width: 30
-        height: 49
+        x: 320
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_58
       rect:
         serializedVersion: 2
-        x: 406
-        y: 834
-        width: 27
-        height: 49
+        x: 384
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_59
       rect:
         serializedVersion: 2
-        x: 465
-        y: 834
-        width: 26
-        height: 49
+        x: 448
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_60
       rect:
         serializedVersion: 2
-        x: 17
-        y: 771
-        width: 30
-        height: 48
+        x: 0
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_61
       rect:
         serializedVersion: 2
-        x: 81
-        y: 771
-        width: 30
-        height: 48
+        x: 64
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_62
       rect:
         serializedVersion: 2
-        x: 145
-        y: 770
-        width: 30
-        height: 49
+        x: 128
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_63
       rect:
         serializedVersion: 2
-        x: 209
-        y: 769
-        width: 29
-        height: 49
+        x: 192
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_64
       rect:
         serializedVersion: 2
-        x: 273
-        y: 770
-        width: 30
-        height: 49
+        x: 256
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_65
       rect:
         serializedVersion: 2
-        x: 337
-        y: 771
-        width: 30
-        height: 48
+        x: 320
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_66
       rect:
         serializedVersion: 2
-        x: 401
-        y: 770
-        width: 30
-        height: 49
+        x: 384
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_67
       rect:
         serializedVersion: 2
-        x: 466
-        y: 769
-        width: 29
-        height: 49
+        x: 448
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_68
       rect:
         serializedVersion: 2
-        x: 529
-        y: 770
-        width: 30
-        height: 49
+        x: 512
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_69
       rect:
         serializedVersion: 2
-        x: 12
-        y: 706
-        width: 31
-        height: 49
+        x: 0
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_70
       rect:
         serializedVersion: 2
-        x: 83
-        y: 706
-        width: 25
-        height: 48
+        x: 64
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_71
       rect:
         serializedVersion: 2
-        x: 149
-        y: 707
-        width: 22
-        height: 48
+        x: 128
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_72
       rect:
         serializedVersion: 2
-        x: 213
-        y: 707
-        width: 24
-        height: 48
+        x: 192
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_73
       rect:
         serializedVersion: 2
-        x: 271
-        y: 706
-        width: 31
-        height: 49
+        x: 256
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_74
       rect:
         serializedVersion: 2
-        x: 340
-        y: 706
-        width: 28
-        height: 48
+        x: 320
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_75
       rect:
         serializedVersion: 2
-        x: 400
-        y: 706
-        width: 30
-        height: 49
+        x: 384
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_76
       rect:
         serializedVersion: 2
-        x: 462
-        y: 706
-        width: 31
-        height: 49
+        x: 448
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_77
       rect:
         serializedVersion: 2
-        x: 533
-        y: 706
-        width: 23
-        height: 49
+        x: 512
+        y: 704
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_78
       rect:
         serializedVersion: 2
-        x: 17
-        y: 642
-        width: 30
-        height: 50
+        x: 0
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_79
       rect:
         serializedVersion: 2
-        x: 81
-        y: 642
-        width: 30
-        height: 50
+        x: 64
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_80
       rect:
         serializedVersion: 2
-        x: 145
-        y: 641
-        width: 30
-        height: 51
+        x: 128
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_81
       rect:
         serializedVersion: 2
-        x: 210
-        y: 641
-        width: 29
-        height: 50
+        x: 192
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_82
       rect:
         serializedVersion: 2
-        x: 273
-        y: 641
-        width: 30
-        height: 51
+        x: 256
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_83
       rect:
         serializedVersion: 2
-        x: 337
-        y: 642
-        width: 30
-        height: 50
+        x: 320
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_84
       rect:
         serializedVersion: 2
-        x: 401
-        y: 641
-        width: 30
-        height: 51
+        x: 384
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_85
       rect:
         serializedVersion: 2
-        x: 465
-        y: 641
-        width: 29
-        height: 50
+        x: 448
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_86
       rect:
         serializedVersion: 2
-        x: 529
-        y: 641
-        width: 30
-        height: 51
+        x: 512
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_87
       rect:
         serializedVersion: 2
-        x: 21
-        y: 578
-        width: 31
-        height: 49
+        x: 0
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_88
       rect:
         serializedVersion: 2
-        x: 84
-        y: 578
-        width: 25
-        height: 48
+        x: 64
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_89
       rect:
         serializedVersion: 2
-        x: 149
-        y: 579
-        width: 22
-        height: 48
+        x: 128
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_90
       rect:
         serializedVersion: 2
-        x: 211
-        y: 579
-        width: 24
-        height: 48
+        x: 192
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_91
       rect:
         serializedVersion: 2
-        x: 274
-        y: 578
-        width: 31
-        height: 49
+        x: 256
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_92
       rect:
         serializedVersion: 2
-        x: 336
-        y: 578
-        width: 28
-        height: 48
+        x: 320
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_93
       rect:
         serializedVersion: 2
-        x: 402
-        y: 578
-        width: 30
-        height: 49
+        x: 384
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_94
       rect:
         serializedVersion: 2
-        x: 467
-        y: 578
-        width: 31
-        height: 49
+        x: 448
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_95
       rect:
         serializedVersion: 2
-        x: 532
-        y: 578
-        width: 23
-        height: 49
+        x: 512
+        y: 576
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_96
       rect:
         serializedVersion: 2
-        x: 17
-        y: 514
-        width: 30
-        height: 48
+        x: 0
+        y: 512
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_97
       rect:
         serializedVersion: 2
-        x: 83
-        y: 513
-        width: 26
-        height: 48
+        x: 64
+        y: 512
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_98
       rect:
         serializedVersion: 2
-        x: 148
-        y: 513
-        width: 25
-        height: 48
+        x: 128
+        y: 512
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_99
       rect:
         serializedVersion: 2
-        x: 211
-        y: 513
-        width: 27
-        height: 49
+        x: 192
+        y: 512
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_100
       rect:
         serializedVersion: 2
-        x: 274
-        y: 513
-        width: 36
-        height: 49
+        x: 256
+        y: 512
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_101
       rect:
         serializedVersion: 2
-        x: 338
-        y: 513
-        width: 39
-        height: 49
+        x: 320
+        y: 512
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_102
       rect:
         serializedVersion: 2
-        x: 12
-        y: 450
-        width: 31
-        height: 49
+        x: 0
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_103
       rect:
         serializedVersion: 2
-        x: 75
-        y: 450
-        width: 31
-        height: 47
+        x: 64
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_104
       rect:
         serializedVersion: 2
-        x: 147
-        y: 450
-        width: 25
-        height: 49
+        x: 128
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_105
       rect:
         serializedVersion: 2
-        x: 199
-        y: 450
-        width: 38
-        height: 49
+        x: 192
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1291,719 +1291,719 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 450
-        width: 44
-        height: 49
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_107
       rect:
         serializedVersion: 2
-        x: 321
-        y: 450
-        width: 43
-        height: 49
+        x: 320
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_108
       rect:
         serializedVersion: 2
-        x: 17
-        y: 386
-        width: 30
-        height: 50
+        x: 0
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_109
       rect:
         serializedVersion: 2
-        x: 83
-        y: 386
-        width: 26
-        height: 50
+        x: 64
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_110
       rect:
         serializedVersion: 2
-        x: 146
-        y: 386
-        width: 27
-        height: 48
+        x: 128
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_111
       rect:
         serializedVersion: 2
-        x: 212
-        y: 386
-        width: 26
-        height: 49
+        x: 192
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_112
       rect:
         serializedVersion: 2
-        x: 276
-        y: 386
-        width: 35
-        height: 50
+        x: 256
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_113
       rect:
         serializedVersion: 2
-        x: 339
-        y: 386
-        width: 44
-        height: 50
+        x: 320
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_114
       rect:
         serializedVersion: 2
-        x: 21
-        y: 322
-        width: 31
-        height: 49
+        x: 0
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_115
       rect:
         serializedVersion: 2
-        x: 86
-        y: 322
-        width: 31
-        height: 47
+        x: 64
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_116
       rect:
         serializedVersion: 2
-        x: 148
-        y: 322
-        width: 25
-        height: 49
+        x: 128
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_117
       rect:
         serializedVersion: 2
-        x: 211
-        y: 322
-        width: 38
-        height: 49
+        x: 192
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_118
       rect:
         serializedVersion: 2
-        x: 276
-        y: 322
-        width: 44
-        height: 49
+        x: 256
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_119
       rect:
         serializedVersion: 2
-        x: 340
-        y: 322
-        width: 43
-        height: 49
+        x: 320
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_120
       rect:
         serializedVersion: 2
-        x: 16
-        y: 258
-        width: 30
-        height: 48
+        x: 0
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_121
       rect:
         serializedVersion: 2
-        x: 83
+        x: 64
         y: 256
-        width: 26
-        height: 49
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_122
       rect:
         serializedVersion: 2
-        x: 148
+        x: 128
         y: 256
-        width: 23
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_123
       rect:
         serializedVersion: 2
-        x: 212
+        x: 192
         y: 256
-        width: 23
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_124
       rect:
         serializedVersion: 2
-        x: 276
+        x: 256
         y: 256
-        width: 27
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_125
       rect:
         serializedVersion: 2
-        x: 340
+        x: 320
         y: 256
-        width: 25
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_126
       rect:
         serializedVersion: 2
-        x: 404
+        x: 384
         y: 256
-        width: 26
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_127
       rect:
         serializedVersion: 2
-        x: 468
+        x: 448
         y: 256
-        width: 27
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_128
       rect:
         serializedVersion: 2
-        x: 532
+        x: 512
         y: 256
-        width: 28
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_129
       rect:
         serializedVersion: 2
-        x: 596
+        x: 576
         y: 256
-        width: 27
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_130
       rect:
         serializedVersion: 2
-        x: 660
+        x: 640
         y: 256
-        width: 23
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_131
       rect:
         serializedVersion: 2
-        x: 724
+        x: 704
         y: 256
-        width: 23
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_132
       rect:
         serializedVersion: 2
-        x: 788
+        x: 768
         y: 256
-        width: 23
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_133
       rect:
         serializedVersion: 2
-        x: 22
-        y: 194
-        width: 22
-        height: 49
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_134
       rect:
         serializedVersion: 2
-        x: 84
-        y: 194
-        width: 25
-        height: 49
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_135
       rect:
         serializedVersion: 2
-        x: 143
-        y: 194
-        width: 32
-        height: 49
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_136
       rect:
         serializedVersion: 2
-        x: 205
-        y: 194
-        width: 35
-        height: 49
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_137
       rect:
         serializedVersion: 2
-        x: 269
-        y: 194
-        width: 35
-        height: 49
+        x: 256
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_138
       rect:
         serializedVersion: 2
-        x: 332
-        y: 194
-        width: 32
-        height: 49
+        x: 320
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_139
       rect:
         serializedVersion: 2
-        x: 396
-        y: 194
-        width: 34
-        height: 49
+        x: 384
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_140
       rect:
         serializedVersion: 2
-        x: 461
-        y: 194
-        width: 36
-        height: 49
+        x: 448
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_141
       rect:
         serializedVersion: 2
-        x: 525
-        y: 194
-        width: 38
-        height: 49
+        x: 512
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_142
       rect:
         serializedVersion: 2
-        x: 589
-        y: 194
-        width: 35
-        height: 49
+        x: 576
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_143
       rect:
         serializedVersion: 2
-        x: 653
-        y: 194
-        width: 34
-        height: 49
+        x: 640
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_144
       rect:
         serializedVersion: 2
-        x: 717
-        y: 194
-        width: 31
-        height: 49
+        x: 704
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_145
       rect:
         serializedVersion: 2
-        x: 781
-        y: 194
-        width: 34
-        height: 49
+        x: 768
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_146
       rect:
         serializedVersion: 2
-        x: 16
-        y: 130
-        width: 30
-        height: 50
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_147
       rect:
         serializedVersion: 2
-        x: 82
-        y: 131
-        width: 25
-        height: 49
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_148
       rect:
         serializedVersion: 2
-        x: 146
-        y: 131
-        width: 24
-        height: 49
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_149
       rect:
         serializedVersion: 2
-        x: 210
-        y: 130
-        width: 24
-        height: 50
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_150
       rect:
         serializedVersion: 2
-        x: 274
-        y: 130
-        width: 24
-        height: 50
+        x: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_151
       rect:
         serializedVersion: 2
-        x: 338
-        y: 130
-        width: 24
-        height: 50
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_152
       rect:
         serializedVersion: 2
-        x: 402
-        y: 130
-        width: 24
-        height: 50
+        x: 384
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_153
       rect:
         serializedVersion: 2
-        x: 466
-        y: 130
-        width: 24
-        height: 50
+        x: 448
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_154
       rect:
         serializedVersion: 2
-        x: 530
-        y: 130
-        width: 24
-        height: 50
+        x: 512
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_155
       rect:
         serializedVersion: 2
-        x: 594
-        y: 130
-        width: 24
-        height: 50
+        x: 576
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_156
       rect:
         serializedVersion: 2
-        x: 658
-        y: 130
-        width: 24
-        height: 50
+        x: 640
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_157
       rect:
         serializedVersion: 2
-        x: 722
-        y: 130
-        width: 24
-        height: 50
+        x: 704
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_158
       rect:
         serializedVersion: 2
-        x: 786
-        y: 130
-        width: 24
-        height: 50
+        x: 768
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_159
       rect:
         serializedVersion: 2
-        x: 20
-        y: 66
-        width: 22
-        height: 49
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_160
       rect:
         serializedVersion: 2
-        x: 83
-        y: 66
-        width: 25
-        height: 49
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_161
       rect:
         serializedVersion: 2
-        x: 145
-        y: 66
-        width: 32
-        height: 49
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_162
       rect:
         serializedVersion: 2
-        x: 208
-        y: 66
-        width: 35
-        height: 49
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_163
       rect:
         serializedVersion: 2
-        x: 272
-        y: 66
-        width: 35
-        height: 49
+        x: 256
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_164
       rect:
         serializedVersion: 2
-        x: 340
-        y: 66
-        width: 32
-        height: 49
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_165
       rect:
         serializedVersion: 2
-        x: 402
-        y: 66
-        width: 34
-        height: 49
+        x: 384
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_166
       rect:
         serializedVersion: 2
-        x: 463
-        y: 66
-        width: 36
-        height: 49
+        x: 448
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_167
       rect:
         serializedVersion: 2
-        x: 525
-        y: 66
-        width: 38
-        height: 49
+        x: 512
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_168
       rect:
         serializedVersion: 2
-        x: 592
-        y: 66
-        width: 35
-        height: 49
+        x: 576
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_169
       rect:
         serializedVersion: 2
-        x: 657
-        y: 66
-        width: 34
-        height: 49
+        x: 640
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_170
       rect:
         serializedVersion: 2
-        x: 724
-        y: 66
-        width: 31
-        height: 49
+        x: 704
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_171
       rect:
         serializedVersion: 2
-        x: 785
-        y: 66
-        width: 34
-        height: 49
+        x: 768
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_172
       rect:
         serializedVersion: 2
-        x: 17
-        y: 2
-        width: 30
-        height: 50
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_173
       rect:
         serializedVersion: 2
-        x: 82
-        y: 2
-        width: 31
-        height: 49
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_174
       rect:
         serializedVersion: 2
-        x: 147
-        y: 2
-        width: 30
-        height: 43
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_175
       rect:
         serializedVersion: 2
-        x: 211
-        y: 3
-        width: 30
-        height: 38
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_176
       rect:
         serializedVersion: 2
-        x: 275
-        y: 3
-        width: 31
-        height: 32
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Graphic_sprite_Player_177
       rect:
         serializedVersion: 2
-        x: 338
+        x: 320
         y: 0
-        width: 34
-        height: 36
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

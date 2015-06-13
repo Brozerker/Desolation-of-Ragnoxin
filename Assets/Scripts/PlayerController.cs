@@ -31,7 +31,11 @@ public class PlayerController: MonoBehaviour
 	void Update()
 	{
 		playerPos = playerTransform.position;
+
+
+
 	
+
 		//JUMP CONTROL
 		if((grounded || !doubleJump) && Input.GetKeyDown (KeyCode.Space))
 		{
@@ -62,6 +66,9 @@ public class PlayerController: MonoBehaviour
           //  animator.SetBool("moveLeft", false);
        // }
 
+
+
+
 	}
     void FixedUpdate() 
 	{
@@ -77,7 +84,7 @@ public class PlayerController: MonoBehaviour
 
 		//move left and right
 		float move = Input.GetAxis ("Horizontal"); //get input direction (+/- value)
-		//animator.SetFloat ("Speed", Mathf.Abs (move)); //apply movement direction to variable for animation (+/- value)
+		animator.SetFloat ("Speed", Mathf.Abs (move)); //apply movement direction to variable for animation (+/- value)
 
 
 		//animation for left/right
@@ -87,6 +94,18 @@ public class PlayerController: MonoBehaviour
 		else if (move < 0 && facingRight) {
 			Flip ();
 		}
+
+		//Attack animation control
+		if (animator.GetBool ("Attack") == true)
+		{
+			animator.SetBool ("Attack", false);
+		}
+		
+		if(animator.GetBool ("Attack") == false && Input.GetKeyDown(KeyCode.W))
+		{
+			animator.SetBool ("Attack", true);
+		}
+
 
 		//actual movement change
 		GetComponent<Rigidbody2D>().velocity = new Vector2(move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
