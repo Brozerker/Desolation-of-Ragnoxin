@@ -16,18 +16,18 @@ public class enemyController : MonoBehaviour {
     private GameObject gameObject;
     private GameObject player;
     public enum UseCase { wander, seek, flee }
-    public UseCase useCase;
+	public UseCase useCase;
 
     void Start() {
         player = GameObject.FindGameObjectWithTag("Player");
         animator = GetComponent<Animator>();
         facingLeft = true;
         startPos = transform.position;
-        attacking = false;
+		attacking = false;
     }
 
     // Update is called once per frame
-    void Update() {
+	void Update() {
         if (attacking) {
             Attack();
             //startTimer = 0;
@@ -38,7 +38,7 @@ public class enemyController : MonoBehaviour {
             if (Mathf.Abs(transform.position.x - player.transform.position.x) < 1)  {
                 useCase = UseCase.seek;
             }
-            updateMovement();
+			updateMovement();
         }
     }
 

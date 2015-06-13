@@ -16,7 +16,7 @@ public class EnemyCollisionChecker : enemyController {
         Vector2 newOffset = new Vector2(attackArea.size.x * offset, 0.0f);
 
         attackArea.size = newSize;
-        attackArea.offset = newOffset;
+		attackArea.offset = newOffset;
 	}
 
 	void Update () {
