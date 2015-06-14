@@ -7,7 +7,7 @@ public class enemyController : MonoBehaviour {
     public float speed;
     public float chaseSpeed;
     public float attackPower;
-    private float attackDelay = 2.0f;
+    private float attackDelay = 10000.0f;
     private float attackTimer = 0.0f;
     private float seekRadius = 3.0f;
 

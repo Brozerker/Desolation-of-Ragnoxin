@@ -46,7 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\ButtonController.cs" />
+     <Compile Include="Assets\Scripts\Button Scripts\Back_ButtonController.cs" />
+     <Compile Include="Assets\Scripts\Button Scripts\ButtonController.cs" />
+     <Compile Include="Assets\Scripts\Button Scripts\Quit_ButtonController.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\EnemyCollisionChecker.cs" />
      <Compile Include="Assets\Scripts\GoalController.cs" />

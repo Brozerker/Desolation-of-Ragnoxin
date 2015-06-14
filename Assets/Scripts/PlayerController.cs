@@ -18,6 +18,11 @@ public class PlayerController: MonoBehaviour
 
 	bool facingRight = true;
 
+	//variables for sound
+	public AudioClip swing; //stores sound effect. Is input in unity GUI
+	public AudioClip grunt;
+	private AudioSource source;
+
 	// global variables
 	public static int lives = 3;
 	public static int health = 3;
@@ -29,6 +34,7 @@ public class PlayerController: MonoBehaviour
         animator = GetComponent<Animator>();
 		jumpForce = jumpForceFactor * 10000; //jump multiplier
 		playerTransform = GameObject.Find ("Player").transform;
+		source = GetComponent<AudioSource>();
     }   
 
 	void Update()
@@ -55,25 +61,8 @@ public class PlayerController: MonoBehaviour
 
 		// Fallen out of the world detection
 		if (playerPos.y < -15) {
-			// reduce health and check if 'dead'
-			PlayerController.health--;
-			if(PlayerController.health <= 0) {
-				// if dead, reduce lives and check for 'game over'
-				PlayerController.lives--;
-				// todo: play death sound
-				if(PlayerController.lives <= 0) {
-					// trigger gameover here once added
-					// for now, reverts to level 1
-					Application.LoadLevel("Level1");
-					health = 3; //When game reset, player's health and lives needed to reset.
-					lives = 3;
-				} else {
-					Application.LoadLevel(Application.loadedLevel);
-					health = 3; //When level reset, player's health needed to reset.
-				}
-			} else {
-				// todo: play hurt sound
-			}
+			// reduce health
+			takeDamage(PlayerController.health);
 		}
 
 		//OLD ANIMATION CODE DELETE IF NO LONGER NEEDED
@@ -84,10 +73,30 @@ public class PlayerController: MonoBehaviour
           //  animator.SetBool("moveLeft", false);
        // }
 
-
-
-
 	}
+
+	//--New class for damaging player-------------------
+	public void takeDamage(int amount){
+		source.PlayOneShot(grunt);
+		PlayerController.health--;
+		if(PlayerController.health <= 0) {
+			// if dead, reduce lives, reset health and check for 'game over'
+			PlayerController.health = 3;
+			PlayerController.lives--;
+			// todo: play death sound
+			if(PlayerController.lives <= 0) {
+				// trigger gameover here once added
+				// for now, reverts to level 1
+				Application.LoadLevel("Level1");
+				// Resets player's lives on game reset.
+				PlayerController.lives = 3;
+			} else {
+				Application.LoadLevel(Application.loadedLevel);
+			}
+		}
+	}
+	//----------------------------------------------------------
+
     void FixedUpdate() 
 	{
 		//check if player is on ground
@@ -122,6 +131,7 @@ public class PlayerController: MonoBehaviour
 		if(animator.GetBool ("Attack") == false && Input.GetKeyDown(KeyCode.W))
 		{
 			animator.SetBool ("Attack", true);
+			source.PlayOneShot(swing);
 		}
 
 
