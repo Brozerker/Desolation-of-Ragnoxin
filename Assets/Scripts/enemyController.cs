@@ -7,16 +7,18 @@ public class enemyController : MonoBehaviour {
     public float speed;
     public float chaseSpeed;
     public float attackPower;
-    public float attackDelay = 0.7f;
-    //private float startTimer;
+    private float attackDelay = 2.0f;
+    private float attackTimer = 0.0f;
+    private float seekRadius = 3.0f;
+
     private Vector3 startPos;
     private Animator animator;
     public static bool facingLeft;
-    public static bool attacking;
+    private bool attacking;
     private GameObject gameObject;
     private GameObject player;
-    public enum UseCase { wander, seek, flee }
-	public UseCase useCase;
+    private enum UseCase { wander, seek, flee }
+	private UseCase useCase;
 
     void Start() {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -24,29 +26,29 @@ public class enemyController : MonoBehaviour {
         facingLeft = true;
         startPos = transform.position;
 		attacking = false;
+        useCase = UseCase.wander;
     }
 
     // Update is called once per frame
 	void Update() {
         if (attacking) {
-            Attack();
-            //startTimer = 0;
-            //if ((Time.deltaTime % waitTime) < 1) {
-            //}
+            if (attackTimer == 0.0f) {
+                animator.SetTrigger("attack");
+                Debug.Log("attack");
+                // player health -= attackPower;
+            }
+            if (attackTimer < attackDelay)      attackTimer += Time.deltaTime;
+            if (attackTimer >= attackDelay)     attackTimer = 0.0f;
+
         }
         else {
-            if (Mathf.Abs(transform.position.x - player.transform.position.x) < 1)  {
+            if (useCase == UseCase.wander 
+                && (Mathf.Abs(transform.position.x - player.transform.position.x) < seekRadius) 
+                && Mathf.Abs(transform.position.y - player.transform.position.y) < 1f)  {
                 useCase = UseCase.seek;
             }
 			updateMovement();
         }
-    }
-
-    IEnumerator Attack() {
-        animator.SetTrigger("attack");
-        Debug.Log("attack");
-        // player health -= attackPower;
-        yield return new WaitForSeconds(attackDelay);
     }
 
     void updateMovement() {
@@ -61,24 +63,55 @@ public class enemyController : MonoBehaviour {
                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, 0.0f);
                 break;
             case enemyController.UseCase.seek:
-                //default to moving right
-                facingLeft = true;
-                speed = Mathf.Abs(speed);
-                chaseSpeed = Mathf.Abs(chaseSpeed);
+                RaycastHit2D leftHit = Physics2D.Raycast(transform.position, -Vector2.right);
+                RaycastHit2D rightHit = Physics2D.Raycast(transform.position, Vector2.right);
+
+                if(leftHit.collider != null) {
+                    if(leftHit.collider.name == "Player");
+                    Debug.Log("to the lerft");
+                    facingLeft = true;
+                    speed *= -1;
+                    //chaseSpeed *= -1;
+                }
+
+                if(rightHit.collider != null) {
+                    if(rightHit.collider.name == "Player");
+                    Debug.Log("to the right");
+                    facingLeft = false;
+                    speed = Mathf.Abs(speed);
+                    //chaseSpeed = Mathf.Abs(chaseSpeed);
+                }               
 
                 //if player is to the left, move left
-                int offset = 20;
-                if ((player.transform.position.x + offset) - (transform.position.x + offset) < 0) {
-                    facingLeft = false;
-                    speed *= -1;
-                    chaseSpeed *= -1;
-                }
-                transform.position = new Vector3(transform.position.x + speed + chaseSpeed * Time.deltaTime, transform.position.y, 0.0f);
-                Debug.Log("seek");
+                //int offset = 50; //offset to make sure the numbers start positive and the same distance apart
+                //if ((player.transform.position.x + offset) - (transform.position.x + offset) < 0) {
+                    
+                //}
+
+                transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, 0.0f);
+                //Debug.Log("seek");
                 break;
             case enemyController.UseCase.flee:
                 break;
         }
+    }
+    void Attack() {
+        attacking = true;
+        //yield return new WaitForSeconds(attackDelay);
+    }
+    void ceaseAttack() {
+        Debug.Log("ceasing");
+        attacking = false;
+        attackTimer = 0.0f;
+    }
+    bool facing() {
+        return facingLeft;
+    }
+    void faceDirection(bool value) {
+        facingLeft = value;
+    }
+    void turnAround() {
+        facingLeft = !facingLeft;
     }
 }
 
