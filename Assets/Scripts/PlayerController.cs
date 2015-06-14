@@ -50,6 +50,7 @@ public class PlayerController: MonoBehaviour
 		// Reset Level Key
 		if(Input.GetKeyDown(KeyCode.R)) {
 			Application.LoadLevel(Application.loadedLevel);
+			health = 3; //When level reset, player's health needed to reset.
 		}
 
 		// Fallen out of the world detection
@@ -64,8 +65,11 @@ public class PlayerController: MonoBehaviour
 					// trigger gameover here once added
 					// for now, reverts to level 1
 					Application.LoadLevel("Level1");
+					health = 3; //When game reset, player's health and lives needed to reset.
+					lives = 3;
 				} else {
 					Application.LoadLevel(Application.loadedLevel);
+					health = 3; //When level reset, player's health needed to reset.
 				}
 			} else {
 				// todo: play hurt sound

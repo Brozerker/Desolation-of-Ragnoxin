@@ -20,6 +20,11 @@ public class enemyController : MonoBehaviour {
     private enum UseCase { wander, seek, flee }
 	private UseCase useCase;
 
+	//variables for sound
+	public AudioClip sound; //stores sound effect. Is input in unity GUI
+	private AudioSource source;
+	private System.Random rand = new System.Random();
+
     void Start() {
         player = GameObject.FindGameObjectWithTag("Player");
         animator = GetComponent<Animator>();
@@ -27,6 +32,7 @@ public class enemyController : MonoBehaviour {
         startPos = transform.position;
 		attacking = false;
         useCase = UseCase.wander;
+		source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -49,6 +55,14 @@ public class enemyController : MonoBehaviour {
             }
 			updateMovement();
         }
+
+		// Will randomly play animal's sound effect
+		int randomValue = rand.Next(100);
+		if (randomValue < 1) {
+			if (!source.isPlaying){
+				source.PlayOneShot(sound);
+			}
+		}
     }
 
     void updateMovement() {
@@ -67,19 +81,21 @@ public class enemyController : MonoBehaviour {
                 RaycastHit2D rightHit = Physics2D.Raycast(transform.position, Vector2.right);
 
                 if(leftHit.collider != null) {
-                    if(leftHit.collider.name == "Player");
-                    Debug.Log("to the lerft");
+                    if(leftHit.collider.name == "Player"){
+                    Debug.Log("to the left");
                     facingLeft = true;
                     speed *= -1;
                     //chaseSpeed *= -1;
+					}
                 }
 
                 if(rightHit.collider != null) {
-                    if(rightHit.collider.name == "Player");
+                    if(rightHit.collider.name == "Player"){
                     Debug.Log("to the right");
                     facingLeft = false;
                     speed = Mathf.Abs(speed);
                     //chaseSpeed = Mathf.Abs(chaseSpeed);
+					}
                 }               
 
                 //if player is to the left, move left
