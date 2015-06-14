@@ -18,8 +18,11 @@ public class PlayerController: MonoBehaviour
 
 	bool facingRight = true;
 
-
-
+	// global variables
+	public static int lives = 3;
+	public static int health = 3;
+	public static int ammo = 20;
+	public static int score = 0;
 
     void Start() {
 
@@ -31,10 +34,7 @@ public class PlayerController: MonoBehaviour
 	void Update()
 	{
 		playerPos = playerTransform.position;
-
-
-
-	
+		
 
 		//JUMP CONTROL
 		if((grounded || !doubleJump) && Input.GetKeyDown (KeyCode.Space))
@@ -53,9 +53,23 @@ public class PlayerController: MonoBehaviour
 		}
 
 		// Fallen out of the world detection
-		if (playerPos.y < -10) {
-			// add code to reduce 'hp' by one
-			Application.LoadLevel(Application.loadedLevel);
+		if (playerPos.y < -15) {
+			// reduce health and check if 'dead'
+			PlayerController.health--;
+			if(PlayerController.health <= 0) {
+				// if dead, reduce lives and check for 'game over'
+				PlayerController.lives--;
+				// todo: play death sound
+				if(PlayerController.lives <= 0) {
+					// trigger gameover here once added
+					// for now, reverts to level 1
+					Application.LoadLevel("Level1");
+				} else {
+					Application.LoadLevel(Application.loadedLevel);
+				}
+			} else {
+				// todo: play hurt sound
+			}
 		}
 
 		//OLD ANIMATION CODE DELETE IF NO LONGER NEEDED
@@ -116,5 +130,20 @@ public class PlayerController: MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1; //flip the transform of the sprite
 		transform.localScale = theScale;
+	}
+
+	void OnGUI()
+	{
+		// Lives - top left
+		GUI.Label (new Rect (10, 10, 70, 20), "Lives: " + PlayerController.lives.ToString());
+
+		// health - just below lives in top left
+		GUI.Label (new Rect (10, 40, 70, 20), "Health: " + PlayerController.health.ToString ()); // convert to hearts later
+
+		// score - top right
+		GUI.Label (new Rect (Screen.width - 80, 10, 60, 20), "Score: " + PlayerController.score.ToString ());
+
+		// ammo - bottom left
+		GUI.Label (new Rect (10, Screen.height - 30, 70, 20), "Ammo: " + PlayerController.ammo.ToString ());
 	}
 }
