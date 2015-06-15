@@ -5,8 +5,8 @@ public class ButtonController : MonoBehaviour {
 	
 	public AudioClip over;
 	public AudioClip pressed;
-	private AudioSource source;
-	private bool isOver = false;
+	protected AudioSource source;
+	protected bool isOver = false;
 
 	// Use this for initialization
 	void Start () {
@@ -21,7 +21,7 @@ public class ButtonController : MonoBehaviour {
 	void OnMouseDown()
 	{
 		source.PlayOneShot (pressed);
-		Debug.Log ("Starting Level 1");
+		Debug.Log ("Starting Level");
 		Application.LoadLevel(Application.loadedLevel+1);
 	}
 

@@ -19,14 +19,17 @@ public class PlayerController: MonoBehaviour
 	bool facingRight = true;
 
 	//variables for sound
-	public AudioClip swing; //stores sound effect. Is input in unity GUI
-	public AudioClip grunt;
-	private AudioSource source;
+	public static AudioClip swing; //stores sound effect. Is input in unity GUI
+	public static AudioClip grunt;
+	private static AudioSource source;
 
 	// global variables
-	public static int lives = 3;
-	public static int health = 3;
-	public static int ammo = 20;
+	public static int MAX_LIVES = 3;
+	public static int MAX_HEALTH = 3;
+	public static int MAX_AMMO = 20;
+	public static int lives = MAX_LIVES;
+	public static int health = MAX_HEALTH;
+	public static int ammo = MAX_AMMO;
 	public static int score = 0;
 
     void Start() {
@@ -56,7 +59,7 @@ public class PlayerController: MonoBehaviour
 		// Reset Level Key
 		if(Input.GetKeyDown(KeyCode.R)) {
 			Application.LoadLevel(Application.loadedLevel);
-			health = 3; //When level reset, player's health needed to reset.
+			health = MAX_HEALTH; //Resets player health with level
 		}
 
 		// Fallen out of the world detection
@@ -76,12 +79,12 @@ public class PlayerController: MonoBehaviour
 	}
 
 	//--New class for damaging player-------------------
-	public void takeDamage(int amount){
-		source.PlayOneShot(grunt);
+	public static void takeDamage(int amount){
+		PlayerController.source.PlayOneShot(PlayerController.grunt);
 		PlayerController.health--;
 		if(PlayerController.health <= 0) {
 			// if dead, reduce lives, reset health and check for 'game over'
-			PlayerController.health = 3;
+			PlayerController.health = MAX_HEALTH;
 			PlayerController.lives--;
 			// todo: play death sound
 			if(PlayerController.lives <= 0) {
@@ -89,7 +92,7 @@ public class PlayerController: MonoBehaviour
 				// for now, reverts to level 1
 				Application.LoadLevel("Level1");
 				// Resets player's lives on game reset.
-				PlayerController.lives = 3;
+				PlayerController.lives = MAX_LIVES;
 			} else {
 				Application.LoadLevel(Application.loadedLevel);
 			}

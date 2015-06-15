@@ -43,20 +43,7 @@ public class EnemyCollisionChecker : enemyController {
             parent.gameObject.SendMessage("Attack");
 
 			// decrease player health
-			PlayerController.health--;
-			if(PlayerController.health <= 0) {
-				//player has died
-				PlayerController.lives--;
-				if(PlayerController.lives <= 0) {
-					// gameover
-					// todo: load gameover screen instead of first level
-					Application.LoadLevel("Level1");
-				} else {
-					// not a gameover - restart level
-					// todo: add death sound
-					Application.LoadLevel(Application.loadedLevel);
-				}
-			}
+			PlayerController.takeDamage(1);
         }
     }
 
