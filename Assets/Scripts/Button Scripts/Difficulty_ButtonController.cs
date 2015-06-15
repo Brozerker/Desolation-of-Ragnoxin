@@ -2,13 +2,8 @@
 using System.Collections;
 
 public class Difficulty_ButtonController : ButtonController {
-	private int difficulty = 2, MAX = 1, MIN = 6; // reversed for setting value purposes
+	private static int difficulty = 2, MAX = 1, MIN = 6; // reversed for setting value purposes
 	public int button;// button value is assigned in Unity. Increase is 1, decrease is -1;
-	Rect rex = new Rect(Screen.width/2 - 10, Screen.height/2 - 70, 20, 20);
-	
-	void OnGUI() {
-		GUI.TextArea(rex, difficulty.ToString());
-	}
 	
 	void OnMouseDown()
 	{
@@ -23,6 +18,9 @@ public class Difficulty_ButtonController : ButtonController {
 			PlayerController.health = difficulty;
 			PlayerController.lives = difficulty;
 
+			// Update script that manages difficulty text.
+			//This is necessary because two different buttons use this script and were writing two texts to the screen
+			Difficulty_Text.difficulty = Difficulty_ButtonController.difficulty; 
 			source.PlayOneShot (pressed);
 			Debug.Log ("Difficulty changed by" + button.ToString ());
 		}

@@ -7,7 +7,7 @@ public class enemyController : MonoBehaviour {
     public float speed;
     public float chaseSpeed;
     public float attackPower;
-    private float attackDelay = 10000.0f;
+    private float attackDelay = 1000.0f;
     private float attackTimer = 0.0f;
     private float seekRadius = 3.0f;
 
@@ -60,7 +60,7 @@ public class enemyController : MonoBehaviour {
 		int randomValue = rand.Next(100);
 		if (randomValue < 1) {
 			if (!source.isPlaying){
-				source.PlayOneShot(sound);
+				source.Play();
 			}
 		}
     }
