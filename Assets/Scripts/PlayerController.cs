@@ -102,6 +102,7 @@ public class PlayerController: MonoBehaviour
 
     void FixedUpdate() 
 	{
+
 		//check if player is on ground
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 
@@ -123,6 +124,18 @@ public class PlayerController: MonoBehaviour
 		}
 		else if (move < 0 && facingRight) {
 			Flip ();
+		}
+
+		//Change weapon
+		// 0 - Melee
+		// 1 - Gun
+		if(Input.GetKeyDown (KeyCode.Alpha1))
+		{
+			animator.SetInteger("Weapon", 0); 
+		}
+		else if(Input.GetKeyDown (KeyCode.Alpha2))
+		{
+			animator.SetInteger("Weapon", 1); 
 		}
 
 		//Attack animation control
