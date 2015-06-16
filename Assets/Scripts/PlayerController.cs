@@ -82,6 +82,8 @@ public class PlayerController: MonoBehaviour
 	public static void takeDamage(int amount){
 		PlayerController.source.PlayOneShot(PlayerController.grunt);
 		PlayerController.health--;
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        FloatyText.Create("-1", playerObj.transform.position, Vector3.up, Color.red, 1); 
 		if(PlayerController.health <= 0) {
 			// if dead, reduce lives, reset health and check for 'game over'
 			PlayerController.health = MAX_HEALTH;
