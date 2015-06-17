@@ -3,27 +3,23 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class FloatyText : MonoBehaviour {
-    Text textElement;
-    public string text;
-    public Color c = Color.red;
-    public Vector3 direction = Vector3.up;
+    public Vector3 velocity = Vector3.up;
     public float time = 1;
     float timer = 0;
 
-	// Use this for initialization
-	void Awake () {
-        textElement = GetComponent<Text>();
-        textElement.text = text;
-        textElement.color = c;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        transform.position += direction * Time.deltaTime;
+    public void SetText(string message, Color color) {
+        Text t = GetComponent<Text>();
+        t.text = message;
+        t.color = color;
+    }
+
+    void Update() {
+        transform.position += velocity * Time.deltaTime;
+        timer += Time.deltaTime;
         if (timer >= time) {
             Destroy(gameObject);
         }
-	}
+    }
 
     public static FloatyText CreateDefaultFloatyText() {
         GameObject go = new GameObject("floaty text");
@@ -42,9 +38,9 @@ public class FloatyText : MonoBehaviour {
 
     public static FloatyText Create(string message, Vector3 position, Vector3 velocity, Color color, float time) {
         FloatyText ft = CreateDefaultFloatyText();
-        ft.text = message;
+        ft.SetText(message, color);
         ft.transform.position = position;
-        ft.c = color;
+        ft.velocity = velocity;
         ft.time = time;
         return ft;
     }

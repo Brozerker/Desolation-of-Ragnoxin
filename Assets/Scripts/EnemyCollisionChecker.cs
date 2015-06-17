@@ -41,11 +41,7 @@ public class EnemyCollisionChecker : enemyController {
         // if player enters collider, start attacking
         if (other.gameObject.tag == "Player") {
             Debug.Log("player!");
-            //attacking = true;
             parent.gameObject.SendMessage("Attack");
-
-			// decrease player health
-			PlayerController.takeDamage(1);
         }
     }
 
@@ -54,7 +50,6 @@ public class EnemyCollisionChecker : enemyController {
         if (other.gameObject.tag == "Player") {
             Debug.Log("kbye");
             parent.gameObject.SendMessage("ceaseAttack");
-            //attacking = false;
         }
     }
 }

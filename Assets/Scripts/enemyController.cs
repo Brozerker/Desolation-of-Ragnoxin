@@ -7,7 +7,7 @@ public class enemyController : MonoBehaviour {
     public float speed;
     public float chaseSpeed;
     public float attackPower;
-    private float attackDelay = 1000.0f;
+    private float attackDelay = 2.0f;
     private float attackTimer = 0.0f;
     private float seekRadius = 3.0f;
 
@@ -40,14 +40,17 @@ public class enemyController : MonoBehaviour {
     // Update is called once per frame
 	void Update() {
         if (attacking) {
+            //Debug.Log(attacking);
+            //updateAttack();
             if (attackTimer == 0.0f) {
                 animator.SetTrigger("attack");
                 Debug.Log("attack");
-                // player health -= attackPower;
+                // decrease player health
+                PlayerController.takeDamage(1);
             }
-            if (attackTimer < attackDelay)      attackTimer += Time.deltaTime;
-            if (attackTimer >= attackDelay)     attackTimer = 0.0f;
-
+            Debug.Log(attackTimer);
+            if (attackTimer < attackDelay) attackTimer += Time.deltaTime;
+            if (attackTimer >= attackDelay) attackTimer = 0.0f;
         }
         else {
             if (useCase == UseCase.wander 
@@ -67,10 +70,21 @@ public class enemyController : MonoBehaviour {
 		}
     }
 
+    IEnumerator updateAttack() {
+        if (attackTimer == 0.0f) {
+            animator.SetTrigger("attack");
+            yield return new WaitForSeconds(0.1f);
+            Debug.Log("attack");
+            // decrease player health
+            PlayerController.takeDamage(1);
+        }
+        if (attackTimer < attackDelay) attackTimer += Time.deltaTime;
+        if (attackTimer >= attackDelay) attackTimer = 0.0f;
+    }
+
     void updateMovement() {
         switch (useCase) {
             case enemyController.UseCase.wander:
-                Debug.Log("wander");
                 if (transform.position.x < startPos.x || transform.position.x > (startPos.x + distance)) {
                     turnAround();
                 }
@@ -89,7 +103,6 @@ public class enemyController : MonoBehaviour {
                     if(rightHit.collider.name == "Player"){
                     Debug.Log("to the right");
                     faceDirection(false);
-                    //chaseSpeed = Mathf.Abs(chaseSpeed);
 					}
                 }               
                 break;
@@ -100,7 +113,6 @@ public class enemyController : MonoBehaviour {
     }
     public void Attack() {
         attacking = true;
-        //yield return new WaitForSeconds(attackDelay);
     }
     public void ceaseAttack() {
         Debug.Log("ceasing");
