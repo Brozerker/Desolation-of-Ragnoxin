@@ -81,6 +81,10 @@ public class enemyController : MonoBehaviour {
         if (attackTimer < attackDelay) attackTimer += Time.deltaTime;
         if (attackTimer >= attackDelay) attackTimer = 0.0f;
     }
+    // TO DO:
+    //  getHit()
+    //  die()
+    //  update seek to take falling in to account
 
     void updateMovement() {
         switch (useCase) {
