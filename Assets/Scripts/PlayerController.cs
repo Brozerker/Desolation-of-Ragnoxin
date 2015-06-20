@@ -31,6 +31,7 @@ public class PlayerController: MonoBehaviour
 	public static int health = MAX_HEALTH;
 	public static int ammo = MAX_AMMO;
 	public static int score = 0;
+	public static int weaponChoice = 0;
 
     void Start() {
 
@@ -133,10 +134,12 @@ public class PlayerController: MonoBehaviour
 		// 1 - Gun
 		if(Input.GetKeyDown (KeyCode.Alpha1))
 		{
+			weaponChoice = 0;
 			animator.SetInteger("Weapon", 0); 
 		}
 		else if(Input.GetKeyDown (KeyCode.Alpha2))
 		{
+			weaponChoice = 1;
 			animator.SetInteger("Weapon", 1); 
 		}
 

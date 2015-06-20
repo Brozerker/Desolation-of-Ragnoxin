@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class enemyController : MonoBehaviour {
-    public float health;
+    public static float health = 2;
     public float distance;
     public float speed;
     public float chaseSpeed;
@@ -136,5 +136,23 @@ public class enemyController : MonoBehaviour {
     public float GetDirection() {
         return facingLeft ? -1 : 1;
     }
+
+
+	public static void takeDamage(int amount)
+	{
+		enemyController.health -= amount;
+
+		GameObject enemyObj = GameObject.FindGameObjectWithTag("Enemy");
+		FloatyText.Create("-"+amount, enemyObj.transform.position, Vector3.up, Color.red, 1); 
+		if (enemyController.health < 0) 
+		{
+			enemyController.health = 0;
+		}
+		if(enemyController.health == 0)
+		{
+			//add code to kill enemy.
+		}
+
+	}
 }
 
