@@ -81,6 +81,11 @@ public class enemyController : MonoBehaviour {
         if (attackTimer < attackDelay) attackTimer += Time.deltaTime;
         if (attackTimer >= attackDelay) attackTimer = 0.0f;
     }
+    IEnumerator killEnemy() {
+        animator.SetTrigger("dying");
+        yield return new WaitForSeconds(0.75f);
+        Destroy(gameObject);
+    }
     // TO DO:
     //  getHit()
     //  die()
@@ -137,22 +142,20 @@ public class enemyController : MonoBehaviour {
         return facingLeft ? -1 : 1;
     }
 
-
-	public static void takeDamage(int amount)
+	public IEnumerator takeDamage(int amount)
 	{
 		enemyController.health -= amount;
 
-		GameObject enemyObj = GameObject.FindGameObjectWithTag("Enemy");
-		FloatyText.Create("-"+amount, enemyObj.transform.position, Vector3.up, Color.red, 1); 
+		//GameObject enemyObj = GameObject.FindGameObjectWithTag("Enemy");
+		FloatyText.Create("-"+amount, gameObject.transform.position, Vector3.up, Color.red, 1); 
 		if (enemyController.health < 0) 
 		{
 			enemyController.health = 0;
 		}
 		if(enemyController.health == 0)
 		{
-			//add code to kill enemy.
+            yield return StartCoroutine("killEnemy");
 		}
-
 	}
 }
 

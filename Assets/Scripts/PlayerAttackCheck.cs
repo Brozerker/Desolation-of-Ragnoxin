@@ -28,7 +28,7 @@ public class PlayerAttackCheck : MonoBehaviour{
 
 		// if enemy enters collider, start attacking
 		if (other.gameObject.tag == "Enemy") {
-			enemyController.takeDamage (amount);
+			other.gameObject.SendMessage("takeDamage", amount);
 		}
 	}
 
