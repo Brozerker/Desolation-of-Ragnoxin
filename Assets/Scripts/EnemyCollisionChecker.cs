@@ -33,10 +33,10 @@ public class EnemyCollisionChecker : enemyController {
 
     void OnTriggerEnter2D(Collider2D other) {
         Debug.Log("thing!");
-        // if enemy runs in to a wall, turn around
-        if (other.gameObject.tag == "Obstacle") {
-            ec.turnAround();
-        }
+			// if enemy runs in to a wall, turn around
+			if (other.gameObject.tag == "Obstacle") {
+				ec.turnAround();
+			}
 
         // if player enters collider, start attacking
         if (other.gameObject.tag == "Player") {

@@ -152,7 +152,7 @@ public class enemyController : MonoBehaviour {
 		}
 		if(enemyController.health == 0)
 		{
-            		yield return StartCoroutine("killEnemy");
+			yield return StartCoroutine("killEnemy");
 		}
 	}
 }
