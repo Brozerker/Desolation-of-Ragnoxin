@@ -144,15 +144,15 @@ public class enemyController : MonoBehaviour {
         animator.SetTrigger("gotHit");
 		enemyController.health -= amount;
 
-		//GameObject enemyObj = GameObject.FindGameObjectWithTag("Enemy");
-		FloatyText.Create("-"+amount, gameObject.transform.position, Vector3.up, Color.red, 1); 
+		GameObject enemyObj = GameObject.FindGameObjectWithTag("Enemy");
+		FloatyText.Create("-"+amount, enemyObj.transform.position, Vector3.up, Color.red, 1); 
 		if (enemyController.health < 0) 
 		{
 			enemyController.health = 0;
 		}
 		if(enemyController.health == 0)
 		{
-            yield return StartCoroutine("killEnemy");
+            		yield return StartCoroutine("killEnemy");
 		}
 	}
 }
