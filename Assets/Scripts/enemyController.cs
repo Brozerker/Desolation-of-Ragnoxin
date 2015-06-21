@@ -86,10 +86,7 @@ public class enemyController : MonoBehaviour {
         yield return new WaitForSeconds(0.75f);
         Destroy(gameObject);
     }
-    // TO DO:
-    //  getHit()
-    //  die()
-    //  update seek to take falling in to account
+
 
     void updateMovement() {
         switch (useCase) {
@@ -144,6 +141,7 @@ public class enemyController : MonoBehaviour {
 
 	public IEnumerator takeDamage(int amount)
 	{
+        animator.SetTrigger("gotHit");
 		enemyController.health -= amount;
 
 		//GameObject enemyObj = GameObject.FindGameObjectWithTag("Enemy");
