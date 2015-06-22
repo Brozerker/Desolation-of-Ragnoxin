@@ -14,7 +14,7 @@ public class enemyController : MonoBehaviour {
     private Vector3 startPos;
     private Animator animator;
     private bool attacking;
-    private GameObject gameObject;
+	private GameObject gameObject = GameObject.FindGameObjectWithTag("Enemy");
     private GameObject player;
     private enum UseCase { wander, seek, flee }
 	private UseCase useCase;
@@ -24,7 +24,7 @@ public class enemyController : MonoBehaviour {
 	private AudioSource source;
 	private System.Random rand = new System.Random();
 
-    int direction = 1;
+    //int direction = 1; Commented out because it isn't being used
     bool facingLeft;
 
     void Start() {
@@ -57,7 +57,9 @@ public class enemyController : MonoBehaviour {
                 && (Mathf.Abs(transform.position.x - player.transform.position.x) < seekRadius) 
                 && Mathf.Abs(transform.position.y - player.transform.position.y) < 1f)  {
                 useCase = UseCase.seek;
-            }
+            }else{
+				useCase = UseCase.wander;
+			}
 			updateMovement();
         }
 
@@ -124,6 +126,7 @@ public class enemyController : MonoBehaviour {
         Debug.Log("ceasing");
         attacking = false;
         attackTimer = 0.0f;
+		useCase = UseCase.wander;
     }
     public bool facing() {
         return facingLeft;

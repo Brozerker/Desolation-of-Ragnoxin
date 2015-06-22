@@ -35,7 +35,8 @@ public class EnemyCollisionChecker : enemyController {
         Debug.Log("thing!");
 			// if enemy runs in to a wall, turn around
 			if (other.gameObject.tag == "Obstacle") {
-				ec.turnAround();
+				//ec.turnAround();
+				parent.gameObject.SendMessage("turnAround");
 			}
 
         // if player enters collider, start attacking
