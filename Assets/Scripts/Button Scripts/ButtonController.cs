@@ -22,7 +22,7 @@ public class ButtonController : MonoBehaviour {
 	{
 		source.PlayOneShot (pressed);
 		Debug.Log ("Starting Level");
-		Application.LoadLevel(Application.loadedLevel+1);
+		Application.LoadLevel(3);
 	}
 
 	void OnMouseOver()

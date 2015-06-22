@@ -7,6 +7,6 @@ public class InfoButton : ButtonController {
 	{
 		source.PlayOneShot (pressed);
 		Debug.Log ("To Info");
-		Application.LoadLevel (6);
+		Application.LoadLevel (3);
 	}
 }
