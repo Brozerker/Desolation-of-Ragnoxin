@@ -14,7 +14,7 @@ public class enemyController : MonoBehaviour {
     private Vector3 startPos;
     private Animator animator;
     private bool attacking;
-	private GameObject gameObject = GameObject.FindGameObjectWithTag("Enemy");
+	public GameObject gameObject;// = GameObject.FindGameObjectWithTag("Enemy");
     private GameObject player;
     private enum UseCase { wander, seek, flee }
 	private UseCase useCase;
